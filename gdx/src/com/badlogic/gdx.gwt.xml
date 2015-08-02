@@ -51,6 +51,7 @@
 	<!-- assets/loaders/resolvers -->		
 		<include name="assets/loaders/resolvers/ExternalFileHandleResolver.java"/>
 		<include name="assets/loaders/resolvers/InternalFileHandleResolver.java"/>
+		<include name="assets/loaders/resolvers/ClasspathFileHandleResolver.java"/>
 		<include name="assets/loaders/resolvers/ResolutionFileResolver.java"/> <!-- Emulated -->
 
 	<!-- audio -->		
@@ -217,6 +218,8 @@
 		<include name="graphics/glutils/FloatFrameBuffer.java"/>
 		<include name="graphics/glutils/FloatTextureData.java"/>
 		<include name="graphics/glutils/FrameBuffer.java"/>
+		<include name="graphics/glutils/FrameBufferCubemap.java"/>
+		<include name="graphics/glutils/GLFrameBuffer.java"/>
 		<include name="graphics/glutils/ImmediateModeRenderer.java"/>
 		<include name="graphics/glutils/ImmediateModeRenderer10.java"/>
 		<include name="graphics/glutils/ImmediateModeRenderer20.java"/>
@@ -286,10 +289,13 @@
 		<include name="maps/tiled/renderers/OrthoCachedTiledMapRenderer.java"/>
 		<include name="maps/tiled/renderers/OrthogonalTiledMapRenderer.java"/>
 
-	<!-- maps/tiles/tiles -->
+	<!-- maps/tiled/tiles -->
 		<include name="maps/tiled/tiles/AnimatedTiledMapTile.java"/>
 		<include name="maps/tiled/tiles/StaticTiledMapTile.java"/>
 	
+	<!-- maps/tiled/objects -->
+		<include name="maps/tiled/objects/TiledMapTileMapObject.java"/>	
+		
 	<!-- math -->
 		<include name="math/Affine2.java"/>
 		<include name="math/Bezier.java"/>
